@@ -11,6 +11,7 @@ $router->put('/users/{id}', 'UserController@update');
 $router->patch('/users/{id}', 'UserController@update');
 $router->delete('/users/{id}', 'UserController@delete');
 
+
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
